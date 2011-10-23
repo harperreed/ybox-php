@@ -1,0 +1,36 @@
+
+/**
+
+** ybox2 PHP Display class. **
+I built this to display info in my apartment. I then used it for some neat visualizations for threadless servers. 
+
+Example:
+http://www.flickr.com/photos/natatwo/3204594772/
+
+Here it is for all. 
+
+Thanks, 
+harper
+
+
+EXAMPLE 
+
+$text = "@@@@@@@@  @@@  @@@   @@@@@@@  @@@  @@@  
+@@@@@@@@  @@@  @@@  @@@@@@@@  @@@  @@@  
+@@!       @@!  @@@  !@@       @@!  !@@  
+!@!       !@!  @!@  !@!       !@!  @!!  
+@!!!:!    @!@  !@!  !@!       @!@@!@!   
+!!!!!:    !@!  !!!  !!!       !!@!!!    
+!!:       !!:  !!!  :!!       !!: :!!   
+:!:       :!:  !:!  :!:       :!:  !:!  
+ ::       ::::: ::   ::: :::   ::  :::  
+ :         : :  :    :: :: :   :   :::  
+                  OFF
+";
+
+
+$title = date("F j, Y, g:i:s a");
+$yb = new ybox2Display($title,"");
+$yb->setText($text);
+print $yb->display();
+**/
